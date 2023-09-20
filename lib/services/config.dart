@@ -1,7 +1,5 @@
-
-
-class Config{
-  static const apiUrl = "<server - url>";
+class Config {
+  static const apiUrl = "https://jobhubrest-production-7c08.up.railway.app";
   static const String loginUrl = "/api/login";
   static const String signupUrl = "/api/signup";
   static const String jobs = "/api/jobs";

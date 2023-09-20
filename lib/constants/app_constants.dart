@@ -33,3 +33,11 @@ List<String> requirement = [
 ];
 
 String desc = "Post your job, interview candidates, and make offers all on Indeed. Start hiring today. Hire with confidence. Post a job on the world's #1 job site to access more talent. Post Jobs. Number 1 Job Site. Post a Job in Minutes. Hire Local Talent. Reach 250M Job Seekers.";
+
+List<String> skills = [
+  "Node js",
+  "JavaScript",
+  "React js",
+  "Aws",
+  "Dark"
+];
