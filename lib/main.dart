@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:job/constants/app_constants.dart';
+import 'package:job/controllers/chat_provider.dart';
 import 'package:job/controllers/exports.dart';
 import 'package:job/firebase_options.dart';
 import 'package:job/views/ui/auth/login.dart';
@@ -41,6 +42,7 @@ void main() async {
     ChangeNotifierProvider(create: (context) => BookMarNotifier()),
     ChangeNotifierProvider(create: (context) => ImageUploader()),
     ChangeNotifierProvider(create: (context) => ProfileNotifier()),
+    ChangeNotifierProvider(create: (context) => ChatNotifier()),
   ], child: const MyApp()));
 }
 

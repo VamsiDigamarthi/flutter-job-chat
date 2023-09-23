@@ -23,11 +23,11 @@ class ImageUploader extends ChangeNotifier {
       // Crop the image
       _imageFile = await cropImage(_imageFile);
       imageUpload(_imageFile!);
-      if (_imageFile != null) {
-        //imageUrl.add(_imageFile.path);
-      } else {
-        return;
-      }
+      // if (_imageFile != null) {
+      //   //imageUrl.add(_imageFile.path);
+      // } else {
+      //   return;
+      // }
     }
   }
 

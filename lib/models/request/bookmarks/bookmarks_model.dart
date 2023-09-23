@@ -1,15 +1,13 @@
 import 'dart:convert';
 
-List<BookmarkResModel> bookmarkResModelFromJson(String str) =>
-    List<BookmarkResModel>.from(
-        json.decode(str).map((x) => BookmarkResModel.fromJson(x)));
+BookmarkReqModel bookmarkReqModelFromJson(String str) =>
+    BookmarkReqModel.fromJson(json.decode(str));
 
-String bookmarkResModelToJson(List<BookmarkResModel> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String bookmarkReqModelToJson(BookmarkReqModel data) =>
+    json.encode(data.toJson());
 
-class BookmarkResModel {
-  BookmarkResModel({
-    required this.id,
+class BookmarkReqModel {
+  BookmarkReqModel({
     required this.job,
     required this.userId,
     required this.title,
@@ -18,7 +16,6 @@ class BookmarkResModel {
     required this.location,
   });
 
-  final String id;
   final String job;
   final String userId;
   final String title;
@@ -26,9 +23,8 @@ class BookmarkResModel {
   final String company;
   final String location;
 
-  factory BookmarkResModel.fromJson(Map<String, dynamic> json) =>
-      BookmarkResModel(
-        id: json["_id"],
+  factory BookmarkReqModel.fromJson(Map<String, dynamic> json) =>
+      BookmarkReqModel(
         job: json["job"],
         userId: json["userId"],
         title: json["title"],
@@ -38,7 +34,6 @@ class BookmarkResModel {
       );
 
   Map<String, dynamic> toJson() => {
-        "_id": id,
         "job": job,
         "userId": userId,
         "title": title,

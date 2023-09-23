@@ -26,18 +26,15 @@ double width = 375.w;
 String theId = '';
 
 List<String> requirement = [
-   "2 to 5 years of experience developing mobile apps natively in iOS and/or Android.",
-   "Good understanding of state management, Flutter flavors and app architecture.",
-   "Strong communications and consultative skills.",
-   "2 years of commercial experience developing and delivering Flutter based apps."
+  "2 to 5 years of experience developing mobile apps natively in iOS and/or Android.",
+  "Good understanding of state management, Flutter flavors and app architecture.",
+  "Strong communications and consultative skills.",
+  "2 years of commercial experience developing and delivering Flutter based apps."
 ];
 
-String desc = "Post your job, interview candidates, and make offers all on Indeed. Start hiring today. Hire with confidence. Post a job on the world's #1 job site to access more talent. Post Jobs. Number 1 Job Site. Post a Job in Minutes. Hire Local Talent. Reach 250M Job Seekers.";
+String desc =
+    "Post your job, interview candidates, and make offers all on Indeed. Start hiring today. Hire with confidence. Post a job on the world's #1 job site to access more talent. Post Jobs. Number 1 Job Site. Post a Job in Minutes. Hire Local Talent. Reach 250M Job Seekers.";
 
-List<String> skills = [
-  "Node js",
-  "JavaScript",
-  "React js",
-  "Aws",
-  "Dark"
-];
+List<String> skills = ["Node js", "JavaScript", "React js", "Aws", "Dark"];
+
+List<String> profile = [];

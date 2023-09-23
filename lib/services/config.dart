@@ -7,4 +7,7 @@ class Config {
   static const String job = "/api/job";
   static const String profileUrl = "/api/users";
   static const String bookmarkUrl = "/api/bookmarks";
+
+  static const String messageUrl = "/api/messages";
+  static const String chatsUrl = "/api/chats";
 }

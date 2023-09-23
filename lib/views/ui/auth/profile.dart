@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:get/get.dart';
 import 'package:job/constants/app_constants.dart';
 import 'package:job/controllers/exports.dart';
 import 'package:job/models/response/auth/profile_model.dart';
@@ -11,6 +12,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:job/views/common/height_spacer.dart';
 import 'package:job/views/common/reusable_text.dart';
 import 'package:job/views/common/width_spacer.dart';
+import 'package:job/views/ui/auth/profile_update.dart';
 import 'package:provider/provider.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -95,7 +97,10 @@ class ProfilePage extends StatelessWidget {
                                   ],
                                 ),
                                 GestureDetector(
-                                  onTap: () {},
+                                  onTap: () {
+                                    profile = UserData.skills;
+                                    Get.to(() => const ProfileUpdate());
+                                  },
                                   child: const Icon(
                                     Icons.edit,
                                     size: 18,
